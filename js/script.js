@@ -12,7 +12,7 @@ function cancel(){
 // Animasi Menulis
 
 const texts = [
-    "18 YEARS OLD",
+    "22 YEARS OLD",
     "DEVELOPER",
     "DESIGNER",
     "GAMER",
