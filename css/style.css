@@ -196,16 +196,16 @@ section {
 }
 
 .main-container .image {
-  width: 50vh;
-  height: 50vh;
-  border-radius: 100%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 50px rgb(58, 211, 3);
 }
-
 .main-container .image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .main-container .image:hover {
