@@ -481,7 +481,7 @@
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
                     <h2>Siapa Aku?</h2>
-                    <p>Halo! Saya Darma Syamsi, 22 tahun, tinggal di Pemalang, Jawa Tengah. Saya suka
+                    <p>Halo! Saya Darma Syamsi, 23 tahun, tinggal di Pemalang, Jawa Tengah. Saya suka
                         menghabiskan waktu dengan bermain game dan kadang ngoding, baik di laptop
                         maupun di HP. Sejak kecil, saya sudah tertarik dengan dunia teknologi dan punya
                         mimpi jadi seorang Back-end Developer. Saya juga senang belajar hal baru. Seperti baru
@@ -646,18 +646,24 @@
 
             // Fungsi pembantu untuk menghasilkan kartu experience
             function generateExperienceCards() {
-                const experiences = [
+			    const experiences = [
+			        {
+			            title: "Project Robot WhatsApp",
+			            company: "Independent Development",
+			            period: "2021 - Present",
+			            description: "Building a WhatsApp automation bot with AI features, media tools, and easy integrations to help businesses work faster."
+			        },
+			        {
+					    title: "Web Automation & Scraping Project",
+					    company: "Independent Development",
+					    period: "2022 - Present",
+					    description: "Creating lightweight web automation tools and data scrapers to streamline workflows, improve efficiency, and support various digital projects."
+					},
                     {
-                        title: "Senior Web Developer",
-                        company: "Tech Solutions Inc.",
-                        period: "2021 - Present",
-                        description: "Leading frontend development team and implementing modern web solutions"
-                    },
-                    {
-                        title: "Frontend Developer",
+                        title: "Back-end Developer",
                         company: "Digital Agency",
                         period: "2019 - 2021",
-                        description: "Developed responsive websites and web applications"
+                        description: "Developed database websites and web applications"
                     }
                     // Add more experiences as needed
                 ];
@@ -674,37 +680,35 @@
             `).join('');
             }
 
-            // Fungsi pembantu untuk menghasilkan kartu client
             function generateClientCards() {
-                const clients = [
-                    {
-                        name: "Ell Udin",
-                        company: "Mengomentari web portfolio",
-                        Image: "zoro.jpg",
-                        testimonial: "Web Portfolio yang keren"
-                    },
-                    {
-                        name: "Ell Ucup",
-                        company: "Mengomentari Bot Whatsapp",
-                        Image: "zoro.jpg",
-                        testimonial: "Bot Whatsapp yang keren, membantu saya dalam mengerjakan tugas di whatsapp"
-                    }
-                    // Add more clients as needed
-                ];
-
-                return clients.map(client => `
-                <div class="content-card" data-aos="fade-up">
-                    <div class="card-image">
-                        <img src="${client.image}" alt="${client.name}">
-                    </div>
-                    <div class="card-info">
-                        <h3>${client.name}</h3>
-                        <h4>${client.company}</h4>
-                        <p class="client-testimonial">"${client.testimonial}"</p>
-                    </div>
-                </div>
-            `).join('');
-            }
+			    const clients = [
+			        {
+			            name: "Ell Udin",
+			            company: "Mengomentari web portfolio",
+			            image: "https://files.catbox.moe/y7jt8f.jpg",
+			            testimonial: "Web Portfolio yang keren"
+			        },
+			        {
+			            name: "Ell Ucup",
+			            company: "Mengomentari Bot Whatsapp",
+			            image: "https://files.catbox.moe/gijid8.jpg",
+			            testimonial: "Bot Whatsapp yang keren, membantu saya dalam mengerjakan tugas di whatsapp"
+			        }
+			    ];
+			
+			    return clients.map(client => `
+			        <div class="content-card" data-aos="fade-up">
+			            <div class="card-image">
+			                <img src="${client.image}" alt="${client.name}">
+			            </div>
+			            <div class="card-info">
+			                <h3>${client.name}</h3>
+			                <h4>${client.company}</h4>
+			                <p class="client-testimonial">"${client.testimonial}"</p>
+			            </div>
+			        </div>
+			    `).join('');
+			}
 
             // Fungsi pembantu untuk menghasilkan kartu award
             function generateAwardCards() {
@@ -748,12 +752,14 @@
                         <img src="img/zoro.jpg" alt="About Image">
                     </div>
                     <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
-                        <h2>Who Am I?</h2>
-                        <p>I'm a passionate developer and designer with a keen eye for detail and a drive for creating
-                            innovative digital solutions. With expertise in web development, UI/UX design, and content
-                            creation, I bring ideas to life through code and creativity.</p>
-                        <p>My journey in technology began with a simple curiosity and has evolved into a professional
-                            pursuit of excellence in digital craftsmanship.</p>
+                        <h2>Siapa Aku?</h2>
+	                    <p>Halo! Saya Darma Syamsi, 23 tahun, tinggal di Pemalang, Jawa Tengah. Saya suka
+	                        menghabiskan waktu dengan bermain game dan kadang ngoding, baik di laptop
+	                        maupun di HP. Sejak kecil, saya sudah tertarik dengan dunia teknologi dan punya
+	                        mimpi jadi seorang Back-end Developer. Saya juga senang belajar hal baru. Seperti baru
+	                        baru ini saya mulai eksplorasi MySQL dan dunia database lainnya. Teknologi selalu
+	                        bikin saya penasaran, dan saya selalu siap buat berkembang dan mencoba hal-hal baru.
+	                    </p>
 
                         <div class="stats">
                             <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" onclick="showProjects()">
@@ -767,10 +773,6 @@
                             <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" onclick="showClients()">
                                 <h3>20+</h3>
                                 <p>Happy Clients</p>
-                            </div>
-                            <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800" onclick="showAwards()">
-                                <h3>15+</h3>
-                                <p>Awards Won</p>
                             </div>
                         </div>
                     </div>
